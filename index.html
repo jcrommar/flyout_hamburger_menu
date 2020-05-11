@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger Company</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="flex">
+        <a href="">+</a>
+        <div class="modal">
+            <div class="inner-modal">
+                <div class="content">
+                    <h1>HOME</h1>
+                    <h1>GALLERY</h1>
+                    <h1>CONTACT</h1>
+                    <h1>ABOUT US</h1>
+                    <h1>LOCATIONS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('a').addEventListener('click',
+        function(e){
+            e.preventDefault();
+            this.classList.toggle('opened');
+        });
+    </script>
+</body>
+
+
+</html>
